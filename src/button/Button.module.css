@@ -35,6 +35,9 @@ a.button {
   width: 100%;
   z-index: -1;
 }
+.noCursorDisabledForLinks {
+  cursor: not-allowed;
+}
 
 .button:hover:before {
   opacity: 0.95;
@@ -58,10 +61,6 @@ a.button.disabled {
   border: 2px solid currentColor;
   color: var(--color-foreground);
   padding: calc(var(--button-padding) - var(--border-width));
-}
-
-.buttonDanger {
-  --button-color: var(--color-danger);
 }
 
 .buttonOutlined:before {
